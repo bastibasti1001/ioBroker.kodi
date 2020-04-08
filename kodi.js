@@ -361,7 +361,7 @@ function connection_emit(){
     });
 	
     connection.notification('Player.OnResume', function(res) {
-        adapter.setState('state', {val: 'play', ack: true});
+        adapter.setState('state', {val: 'resume', ack: true});
     });
 	
     connection.notification('Player.OnStop', function(res) {
